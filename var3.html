@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Work 3 JavaScript base</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<br>
+<p>С помощью цикла do…while написать функцию для вывода чисел от 0 до 10, чтобы результат выглядел так:</p>
+<p>0 – это ноль</p>
+<p>1 – нечетное число</p>
+<p>2 – четное число</p>
+<p>3 – нечетное число</p>
+<p>...</p>
+<p>10 – четное число</p>
+
+
+<script language="javascript">
+    'use strict';
+        var a = -1;
+        do {
+            a++;
+            if (a === 0){
+                console.log(a, "- это ноль");
+            } else if (a % 2 ===0){
+                console.log(a, " четное число");
+            } else {
+                console.log(a, " нечетное число");
+            }
+        } while (a < 10);
+</script>
+
+<a href="index.html"><input id="elem" type="button" value="На главную"></a>
+
+</body>
+</html>

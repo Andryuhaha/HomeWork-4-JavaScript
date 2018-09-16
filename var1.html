@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Work 3 JavaScript base</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<br>
+<p>С помощью цикла while вывести все простые числа в промежутке от 0 до 100</p>
+<p>Натуральное число, большее 1, называется простым, если оно ни на что не делится, кроме себя и 1</p>
+
+<script language="javascript">
+    'use strict';
+    var count = 26; //последнее число будет 101, предыдущее 97
+    var inc = 2; //c этого начнем цикл так, как 1 делится само на себя
+    
+    while(count != 0) {
+        if(naturalNumber(inc)) {
+            console.log(inc);
+            count--;
+        } 
+    inc++;
+}
+
+function naturalNumber(number) {
+        for (var i = 2; i <= number/2; i++) {
+            if (number % i == 0) {
+                return false;
+            }
+        }
+    return true;
+}
+    
+</script>
+
+<a href="index.html"><input id="elem" type="button" value="На главную"></a>
+
+</body>
+</html>
