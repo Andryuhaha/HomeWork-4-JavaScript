@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Work 4 JavaScript base</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<br>
+    <p>Подумайте над глобальными сущностями. К примеру, сущность “Продукт” в
+        интернет-магазине актуальна не только для корзины, но и для каталога. Стремиться нужно к
+        тому, чтобы объект “Продукт” имел единую структуру для различных модулей нашего сайта,
+        но в разных местах давал возможность вызывать разные методы.</p>
+
+
+<script language="javascript">
+    'use strict';
+   
+    var    basket = [
+            {name:'Объ', amount: 1, price: 3600}, 
+            {name:'Казанка', amount: 2, price: 7200},
+            {name:'Неман 2', amount: 1, price: 4800}
+    ];
+
+        
+    function countBasketPrice(bsk) {
+            let sum = 0;
+            for (let i = 0; i<bsk.length; i++) { 
+            sum = sum + bsk[i].price*bsk[i].amount;
+    }
+    return sum;
+        
+}
+console.log(countBasketPrice(basket));
+    
+</script>
+
+<a href="index.html"><input id="elem" type="button" value="На главную"></a>
+
+</body>
+</html>

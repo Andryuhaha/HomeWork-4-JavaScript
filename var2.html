@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Work 4 JavaScript base</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<br>
+    <p>Продолжаем работу с нашим интернет-магазином<br>
+        2.1. В прошлом ДЗ Вы реализовали корзину на базе массивов. Какими объектами можно<br>
+         заменить элементы данных массивов?<br>
+        2.2. Реализуйте такие объекты<br>
+        2.3. Перенесите функционал подсчета корзины на объектно-ориентированную базу</p>
+
+
+<script language="javascript">
+    'use strict';
+   
+    var    basket = [
+            {name:'Объ', amount: 1, price: 3600}, 
+            {name:'Казанка', amount: 2, price: 7200},
+            {name:'Неман 2', amount: 1, price: 4800}
+    ];
+
+        
+    function countBasketPrice(bsk) {
+            let sum = 0;
+            for (let i = 0; i<bsk.length; i++) { 
+            sum = sum + bsk[i].price*bsk[i].amount;
+    }
+    return sum;
+        
+}
+console.log("Сумма корзины:" + countBasketPrice(basket));
+console.log("Массив:")
+console.log(basket);
+    
+</script>
+
+<a href="index.html"><input id="elem" type="button" value="На главную"></a>
+
+</body>
+</html>
