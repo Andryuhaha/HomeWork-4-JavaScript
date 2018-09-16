@@ -16,12 +16,19 @@
 
 <script language="javascript">
     'use strict';
-   
-    var    basket = [
-            {name:'Объ', amount: 1, price: 3600}, 
-            {name:'Казанка', amount: 2, price: 7200},
-            {name:'Неман 2', amount: 1, price: 4800}
+ 
+//как я понял, необходимо например для товара больше вариаций, чем тербуется для корзины
+    var product = [
+            {name:'Объ', amount: 1, price: 3600, length: 3, width: 1, weight: 520}, 
+            {name:'Казанка', amount: 2, price: 7200, length: 4, width: 1, weight: 700},
+            {name:'Неман 2', amount: 1, price: 4800, length: 3, width: 1, weight: 450}
     ];
+    
+    //basket = [
+    //        {name:'Объ', amount: 1, price: 3600}, 
+    //        {name:'Казанка', amount: 2, price: 7200},
+    //        {name:'Неман 2', amount: 1, price: 4800}
+    //];
 
         
     function countBasketPrice(bsk) {
@@ -32,7 +39,11 @@
     return sum;
         
 }
-console.log(countBasketPrice(basket));
+console.log("Сумма:");
+console.log(countBasketPrice(product));
+console.log("Массив:");
+console.log(product);
+console.log("как я понял, необходимо например для товара больше характеристик, чем тербуется для корзины");
     
 </script>
 
